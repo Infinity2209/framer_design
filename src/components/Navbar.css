@@ -1,0 +1,81 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* display: flex; */
+    justify-content: center;
+    margin-left: 8rem;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(90deg,rgba(255,255,255,0.3) 50% 100%);
+    border-radius: 8px;
+    padding: 5px 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.access-btn:hover {
+    background-color: #e04343;
+    box-shadow: 0 0 10px 2px rgba(255, 76, 76, 0.7);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.access-btn {
+    background-color: #ff4c4c;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.access-btn:hover {
+    background-color: #e04343;
+}
+
+.navbar.hidden {
+    top: -80px;
+    /* hide navbar by moving it up */
+}
+
+.navbar.active {
+    top: 0;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
+    /* visible navbar with transparent blurred background */
+    transition: top 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
