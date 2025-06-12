@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import './Hero.css';
 import heroImage from '../assets/image.png';
 
+// Array of partner logos to display in the hero section
 const logos = [
   { src: require('../assets/company/image1.png'), alt: 'Zapier' },
   { src: require('../assets/company/image2.png'), alt: 'Inframail' },
@@ -10,10 +11,12 @@ const logos = [
   { src: require('../assets/company/image5.png'), alt: 'Instantly' },
 ];
 
+// Hero component renders the main banner section with headline, subtitle, images, and scrolling logos
 const Hero = () => {
   const logosRef = useRef(null);
   const [animationDuration, setAnimationDuration] = useState(20);
 
+  // Calculate animation duration for scrolling logos based on container width and speed
   useEffect(() => {
     if (logosRef.current) {
       const logosWidth = logosRef.current.scrollWidth / 3; // width of one set of logos
@@ -23,7 +26,7 @@ const Hero = () => {
     }
   }, []);
 
-  // Render logos array multiple times for seamless scroll
+  // Render logos array multiple times for seamless scroll effect
   const renderLogos = (times) => {
     let items = [];
     for (let i = 0; i < times; i++) {
@@ -50,6 +53,7 @@ const Hero = () => {
           <div className="hero-gradient-circle orange"></div>
           <div className="hero-gradient-circle blue"></div>
           
+          {/* Main hero image */}
           <img
             src={heroImage}
             alt="Verified B2B Leads"

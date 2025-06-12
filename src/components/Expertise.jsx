@@ -7,10 +7,12 @@ import image4 from '../assets/Expertise/image4.png';
 import image5 from '../assets/Expertise/image5.png';
 import image6 from '../assets/Expertise/image6.png';
 
+// Expertise component displays a section showcasing areas of expertise with images and heading
 const Expertise = () => {
     return (
         <section className="expertise-section">
             <div className="expertise-tag">
+                {/* Icon and label for the expertise section */}
                 <div className="expertise-icon" aria-hidden="true" style={{ width: '24px', height: '24px', marginRight: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 2L14.09 8.26L20.97 8.27L15.45 12.14L17.54 18.4L12 14.53L6.46 18.4L8.55 12.14L3.03 8.27L9.91 8.26L12 2Z" fill="#FF5722"/>
@@ -21,9 +23,11 @@ const Expertise = () => {
                 </div>
                 <span>Our Expertise</span>
             </div>
+            {/* Main heading for the expertise section */}
             <h1 className="expertise-main-heading">
                 Expertise that drives your success
             </h1>
+            {/* Images representing different expertise areas */}
             <div className="expertise-images">
                 <img src={image1} alt="Expertise 1" />
                 <img src={image2} alt="Expertise 2" />

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './FAQ.css';
 
+// FAQ component renders a list of frequently asked questions with toggle functionality
 const FAQ = () => {
-    const [activeIndex, setActiveIndex] = useState(2); // Third item pre-opened (index 2)
+    // State to track which FAQ item is currently active/open; default is index 2 (third item)
+    const [activeIndex, setActiveIndex] = useState(2);
 
+    // Array of FAQ questions and answers
     const faqData = [
         {
             question: "What exactly is the B2B Leads Vault?",
@@ -27,12 +30,13 @@ const FAQ = () => {
         }
     ];
 
+    // Function to toggle the active FAQ item; closes if clicked again
     const toggleFaq = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
+    // useEffect hook to add a parallax scrolling effect to the background
     useEffect(() => {
-        // Add parallax effect to background
         const handleScroll = () => {
             const scrolled = window.pageYOffset;
             const rate = scrolled * -0.5;

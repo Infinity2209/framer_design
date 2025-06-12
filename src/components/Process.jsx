@@ -1,10 +1,12 @@
 import React from 'react';
 import './Process.css';
 
+// Process component displays the steps to access the B2B leads database and legal warnings
 const Process = () => {
     return (
         <section className="process-section">
             <div className="process-tag">
+                {/* Icon and label for the process section */}
                 <div className="process-icon" aria-hidden="true" style={{ width: '34px', height: '34px', marginRight: '8px' }}>
                     <svg width="54" height="54" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="16" y="10" width="24" height="32" rx="1" ry="1" fill="#FF5722" />
@@ -19,13 +21,16 @@ const Process = () => {
                 </div>
                 <span>Process</span>
             </div>
+            {/* Main heading for the process section */}
             <h1 className="process-main-heading">
                 Access Your 400M+ B2B Leads <br />
                 <em>Database</em> in 4 Simple Steps
             </h1>
+            {/* Subheading describing the offer */}
             <p className="process-subheading">
                 Access Industry-Leading Data You Can Trust Only For $99 Lifetime Access
             </p>
+            {/* Steps to access the database */}
             <div className="process-steps">
                 <div className="step">
                     <div className="step-icon">
@@ -63,6 +68,7 @@ const Process = () => {
                     </p>
                 </div>
             </div>
+            {/* Legal warning about unauthorized resale */}
             <div className="legal-warning">
                 <h2><span className="highlight-red">Resale Forbidden</span> — Legal Action Will Be Taken!</h2>
                 <p>
@@ -73,6 +79,7 @@ const Process = () => {
                     By purchasing or using this database, <span className="highlight-red">you agree to these terms.</span>
                 </p>
             </div>
+            {/* Button to get instant access */}
             <a
                 href="https://www.paypal.com/ncp/payment/2TRZCQMYYRCWY"
                 target="_blank"

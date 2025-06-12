@@ -6,10 +6,12 @@ import image2 from '../assets/Features/image2.png';
 import image3 from '../assets/Features/image3.png';
 import image4 from '../assets/Features/image4.png';
 
+// Features component displays key features of the product with images and descriptions
 const Features = () => {
     return (
         <section className="features-section">
             <div className="features-tag">
+                {/* Icon and label for the features section */}
                 <div className="feature-icon" aria-hidden="true" style={{ width: '34px', height: '34px', marginRight: '8px' }}>
                     <svg width="34" height="34" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="8" y="24" width="48" height="28" rx="4" ry="4" fill="#FF5722" stroke="#E64A19" strokeWidth="1" />
@@ -27,9 +29,11 @@ const Features = () => {
                 </div>
                 <span>Features</span>
             </div>
+            {/* Main heading for the features section */}
             <h1 className="features-main-heading">
                 Struggling to find clients? Get 400M+ verified B2B leads for <em>just $99</em>
             </h1>
+            {/* List of features with images and descriptions */}
             <div className="features-list">
                 <div className="feature feature-1 left-image">
                     <div className="feature-text">
