@@ -49,21 +49,33 @@
 
 .process-steps {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 2000px;
     margin: 0 auto 3rem auto;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 .step {
-    flex: 1 1 0;
-    max-width: 220px;
+    flex: 0 0 48%;
+    max-width: 48%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.step {
+    flex: 0 0 48%;
+    max-width: 48%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
 .step-icon {
-    display: none;
-    /* Hide step icons to match screenshot */
+    display: block;
+    /* Show step icons for animation */
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .step-title {

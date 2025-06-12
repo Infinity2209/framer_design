@@ -1,5 +1,7 @@
 import React from 'react';
 import './Process.css';
+import AnimatedIcon from './AnimatedIcon';
+import LottieAnimatedIcon from './LottieAnimatedIcon';
 
 // Process component displays the steps to access the B2B leads database and legal warnings
 const Process = () => {
@@ -31,43 +33,44 @@ const Process = () => {
                 Access Industry-Leading Data You Can Trust Only For $99 Lifetime Access
             </p>
             {/* Steps to access the database */}
-            <div className="process-steps">
-                <div className="step">
-                    <div className="step-icon">
-                        <dotlottie-player
-                            src="https://framerusercontent.com/assets/5agvGTKvDzdOMKNfAqox82a1LVE.json"
-                            autoplay
-                            loop
-                            background="rgba(0, 0, 0, 0)"
-                            speed="1"
-                            direction="1"
-                            style={{ height: '100px', width: '100px', margin: '0 auto 1rem auto' }}
-                        ></dotlottie-player>
+                <div className="process-steps">
+                    <div className="step">
+                        <div className="step-icon">
+                            <LottieAnimatedIcon animationPath="https://framerusercontent.com/assets/DO2cdjanto0fGn2l0EWwbzTTU.json" />
+                        </div>
+                        <h2 className="step-title">Make Your Payment</h2>
+                        <p className="step-description">
+                            Use our secure gateway to complete your purchase.
+                        </p>
                     </div>
-                    <h2 className="step-title">Make Your Payment</h2>
-                    <p className="step-description">
-                        Use our secure gateway to complete your purchase.
-                    </p>
+                    <div className="step">
+                        <div className="step-icon">
+                            <LottieAnimatedIcon animationPath="https://framerusercontent.com/assets/5agvGTKvDzdOMKNfAqox82a1LVE.json" />
+                        </div>
+                        <h2 className="step-title">Send Payment Confirmation</h2>
+                        <p className="step-description">
+                            Share a screenshot of your transaction via WhatsApp (+91 81089 72414) or email for quick verification.
+                        </p>
+                    </div>
+                    <div className="step">
+                        <div className="step-icon">
+                            <LottieAnimatedIcon animationPath="https://framerusercontent.com/assets/M43pKWx2h9TTK3LlsafRJxZF0.json" />
+                        </div>
+                        <h2 className="step-title">Get Verified Instantly</h2>
+                        <p className="step-description">
+                            We’ll confirm your payment and prepare your file for delivery.
+                        </p>
+                    </div>
+                    <div className="step">
+                        <div className="step-icon">
+                            <LottieAnimatedIcon animationPath="https://framerusercontent.com/assets/f3ADbj3wQks0W5WjrKLYPB4pdE.json" />
+                        </div>
+                        <h2 className="step-title">Receive the Database</h2>
+                        <p className="step-description">
+                            Get instant access to the full database — delivered directly to your inbox.
+                        </p>
+                    </div>
                 </div>
-                <div className="step">
-                    <h2 className="step-title">Send Payment Confirmation</h2>
-                    <p className="step-description">
-                        Share a screenshot of your transaction via WhatsApp (+91 81089 72414) or email for quick verification.
-                    </p>
-                </div>
-                <div className="step">
-                    <h2 className="step-title">Get Verified Instantly</h2>
-                    <p className="step-description">
-                        We’ll confirm your payment and prepare your file for delivery.
-                    </p>
-                </div>
-                <div className="step">
-                    <h2 className="step-title">Receive the Database</h2>
-                    <p className="step-description">
-                        Get instant access to the full database — delivered directly to your inbox.
-                    </p>
-                </div>
-            </div>
             {/* Legal warning about unauthorized resale */}
             <div className="legal-warning">
                 <h2><span className="highlight-red">Resale Forbidden</span> — Legal Action Will Be Taken!</h2>
