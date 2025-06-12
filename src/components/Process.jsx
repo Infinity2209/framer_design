@@ -1,6 +1,5 @@
 import React from 'react';
 import './Process.css';
-import AnimatedIcon from './AnimatedIcon';
 import LottieAnimatedIcon from './LottieAnimatedIcon';
 
 // Process component displays the steps to access the B2B leads database and legal warnings
